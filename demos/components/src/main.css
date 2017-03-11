@@ -1,5 +1,5 @@
-/* @import 'todo.css'; */
-/* @import 'github.css'; */
+@import 'todo.css';
+@import 'github.css';
 
 body {
   color: #293c4b;

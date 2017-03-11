@@ -1,0 +1,34 @@
+.find-user label {
+  display: block;
+  font-size: 20px;
+}
+
+.find-user input {
+  padding: 5px;
+}
+
+.find-user button {
+  margin-left: 10px;
+}
+
+.fetching-user {
+  font-size: 40px;
+  font-weight: bold;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.view-user img {
+  float: left;
+  margin-right: 20px;
+  width: 150px;
+}
+
+.find-user + .fetch-error {
+  margin-top: 20px;
+}
+
+.fetch-error {
+  color: #c00;
+  font-size: 20px;
+}

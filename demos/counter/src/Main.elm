@@ -2,19 +2,21 @@ module Main exposing (..)
 
 import Html exposing (..)
 import Html.Attributes exposing (class)
+import Html.Events exposing (onClick)
 
 
 type alias Model =
-    ()
+    Int
 
 
 type Msg
-    = NoOP
+    = Increment
+    | Decrement
 
 
 initialModel : Model
 initialModel =
-    ()
+    0
 
 
 init : ( Model, Cmd Msg )
@@ -24,13 +26,20 @@ init =
 
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
-    ( model, Cmd.none )
+    case msg of
+        Increment ->
+            ( model + 1, Cmd.none )
+
+        Decrement ->
+            ( model - 1, Cmd.none )
 
 
 view : Model -> Html Msg
 view model =
     div [ class "counter" ]
-        [ text "Hello World Counter"
+        [ div [] [ text (toString model) ]
+        , button [ onClick Increment ] [ text "Increment" ]
+        , button [ onClick Decrement ] [ text "Decrement" ]
         ]
 
 

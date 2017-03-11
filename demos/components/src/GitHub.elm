@@ -1,4 +1,4 @@
-module Main exposing (..)
+module GitHub exposing (..)
 
 import Http
 import Html exposing (..)

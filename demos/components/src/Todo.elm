@@ -1,4 +1,4 @@
-module Main exposing (..)
+module Todo exposing (..)
 
 import Html exposing (..)
 import Html.Attributes exposing (checked, class, type_, value)
@@ -224,7 +224,7 @@ main : Program Never Model Msg
 main =
     Html.program
         { init = init
-        , view = view
         , update = update
+        , view = view
         , subscriptions = subscriptions
         }
