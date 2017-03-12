@@ -1,0 +1,29 @@
+.counter {
+  color: #293c4b;
+  font-family: 'Source Sans Pro', 'Trebuchet MS', 'Lucida Grande', 'Bitstream Vera Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.counter button {
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px
+}
+
+.counter button:active {
+  box-shadow: none;
+}
+
+.counter button:active, button:focus {
+  outline: none;
+}
+
+.counter button + button {
+  margin-left: 5px;
+}

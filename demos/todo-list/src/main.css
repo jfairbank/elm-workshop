@@ -1,0 +1,10 @@
+@import 'todo.css';
+
+body {
+  color: #293c4b;
+  font-family: 'Source Sans Pro', 'Trebuchet MS', 'Lucida Grande', 'Bitstream Vera Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1 {
+  font-weight: bold;
+}
