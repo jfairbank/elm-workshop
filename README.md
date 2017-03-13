@@ -64,6 +64,8 @@ please find the best Elm plugins for it and submit a PR!
         * **Elm Language Support**
         * **Highlight Build Errors**
     * Missing your IDE or editor? Make a PR please!
+5. Install workshop dependencies
+    * If you plan to code along during the workshop, please complete steps 2 and 3 [**below**](#follow-along) as well.
 
 ## Follow Along
 
