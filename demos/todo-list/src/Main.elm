@@ -187,7 +187,7 @@ todoItemView todoItem =
                 Incomplete ->
                     incompleteTodoItemView todoItem
     in
-        div [ class "todo-list-item" ]
+        li [ class "todo-list-item" ]
             [ child ]
 
 
