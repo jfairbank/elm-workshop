@@ -9,10 +9,12 @@ To access the finished demos, checkout the `completed` branch and look in the
 ## Set Up Dependencies for Elm Development
 
 These are typical global dependencies you will want installed for developing in
-Elm in general. I've listed some npm packages as well as some suggested IDE/editor
-plugins. Please note that I am a Vim user, so I've only minimally tested the
-plugins for other editors below. If you don't see your favorite editor listed,
-please find the best Elm plugins for it and submit a PR!
+Elm in general. Please follow these steps as well as steps 2, 3, and 4 in the
+next [section](#follow-along) to set up ahead of time for the workshop.
+
+Please note that I am a Vim user, so I've only minimally tested the plugins for
+other editors below. If you don't see your favorite editor listed, please find
+the best Elm plugins for it and submit a PR!
 
 1. Install the latest **LTS** version of Node: currently **6.10.0**
     * **Recommended:** install via a version manager like **nvm**
@@ -65,7 +67,7 @@ please find the best Elm plugins for it and submit a PR!
         * **Highlight Build Errors**
     * Missing your IDE or editor? Make a PR please!
 5. Install workshop dependencies
-    * If you plan to code along during the workshop, please complete steps 2 and 3 [**below**](#follow-along) as well.
+    * If you plan to code along during the workshop, please complete steps 2, 3, and 4 [**below**](#follow-along) as well.
 
 ## Follow Along
 
@@ -73,16 +75,18 @@ please find the best Elm plugins for it and submit a PR!
 2. Clone this repo
     * `git clone https://github.com/jfairbank/elm-workshop.git`
     * `cd elm-workshop`
-3. Install dependencies for demos and API server
+3. Install Node dependencies for demos and API server
     * Install via [yarn](https://yarnpkg.com/)
       * `yarn`
     * Or install via npm
       * `npm install`
-4. Start API server for the GitHub demo
+4. Install Elm dependencies
+    * `npm run install:elm-dependencies`
+5. Start API server for the GitHub demo
     * `npm run api`
-5. Build apps with me in the `demos/` folder
+6. Build apps with me in the `demos/` folder
     * `cd demos/`
-6. Run a specific demo while building:
+7. Run a specific demo while building:
     * General Syntax
       * `npm run demo:syntax`
     * Todo List

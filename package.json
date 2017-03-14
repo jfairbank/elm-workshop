@@ -5,7 +5,8 @@
     "demo:counter": "cd demos/counter && elm-app start",
     "demo:github": "cd demos/github && elm-app start",
     "demo:syntax": "cd demos/syntax && nodemon --exec 'clear && node .' -w Syntax.elm",
-    "demo:todo-list": "cd demos/todo-list && elm-app start"
+    "demo:todo-list": "cd demos/todo-list && elm-app start",
+    "install:elm-dependencies": "cd demos/components && elm package install -y && cd ../github && elm package install -y && cd ../syntax && elm package install -y && cd ../todo-list && elm package install -y"
   },
   "dependencies": {
     "axios": "^0.15.3",
