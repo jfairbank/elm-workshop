@@ -24,21 +24,25 @@ the best Elm plugins for it and submit a PR!
         * 64-bit: `nvm install 6.10.0 64`
         * 32-bit: `nvm install 6.10.0 32`
     * Or download from [nodejs.org](https://nodejs.org)
-2. Install **Elm** via **npm** (Node package manager that comes with Node installation)
-    * `npm install -g elm`
-3. Install supporting Elm packages via **npm**
-    * [**elm-format**](https://github.com/avh4/elm-format)
-      * Format Elm code to a unified community standard.
-      * `npm install -g elm-format`
-    * [**elm-oracle**](https://github.com/ElmCast/elm-oracle)
-      * Autocompletion for Elm code.
-      * `npm install -g elm-oracle`
-    * [**run-elm**](https://github.com/jfairbank/run-elm)
-      * Run Elm code from command line.
-      * `npm install -g run-elm`
-    * [**create-elm-app**](https://github.com/halfzebra/create-elm-app)
-      * Easily bootstrap and build Elm apps.
-      * `npm install -g create-elm-app`
+2. Quickly install all dependencies
+    * Via **npm**: `npm install -g elm elm-format elm-oracle run-elm create-elm-app`
+    * Via **yarn**: `yarn global add elm elm-format elm-oracle run-elm create-elm-app`
+3. Or, individually install each dependency
+    1. Install **Elm** via **npm** (Node package manager that comes with Node installation)
+        * `npm install -g elm`
+    2. Install supporting Elm packages via **npm**
+        * [**elm-format**](https://github.com/avh4/elm-format)
+          * Format Elm code to a unified community standard.
+          * `npm install -g elm-format`
+        * [**elm-oracle**](https://github.com/ElmCast/elm-oracle)
+          * Autocompletion for Elm code.
+          * `npm install -g elm-oracle`
+        * [**run-elm**](https://github.com/jfairbank/run-elm)
+          * Run Elm code from command line.
+          * `npm install -g run-elm`
+        * [**create-elm-app**](https://github.com/halfzebra/create-elm-app)
+          * Easily bootstrap and build Elm apps.
+          * `npm install -g create-elm-app`
 4. Install helpful plugins for your IDE or text editor
     * **Vim** (with a package manager like [vim-plug](https://github.com/junegunn/vim-plug) or [Vundle](https://github.com/VundleVim/Vundle.vim))
       * [**Valloric/YouCompleteMe**](https://github.com/Valloric/YouCompleteMe)
