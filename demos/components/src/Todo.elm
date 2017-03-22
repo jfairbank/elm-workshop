@@ -37,11 +37,6 @@ initialModel =
     ]
 
 
-init : ( Model, Cmd Msg )
-init =
-    ( initialModel, Cmd.none )
-
-
 editTodoItem : TodoItem -> TodoItem
 editTodoItem todoItem =
     { todoItem | status = Editing }
@@ -86,38 +81,26 @@ removeTodoItem refTodoItem todoItems =
     List.filter ((/=) refTodoItem) todoItems
 
 
-update : Msg -> Model -> ( Model, Cmd Msg )
+update : Msg -> Model -> Model
 update msg model =
     case msg of
         EditTodoItem refTodoItem ->
-            ( updateTodoItem refTodoItem editTodoItem model
-            , Cmd.none
-            )
+            updateTodoItem refTodoItem editTodoItem model
 
         SaveTodoItem refTodoItem ->
-            ( updateTodoItem refTodoItem saveTodoItem model
-            , Cmd.none
-            )
+            updateTodoItem refTodoItem saveTodoItem model
 
         UpdateTodoItem refTodoItem description ->
-            ( updateTodoItem refTodoItem (setDescription description) model
-            , Cmd.none
-            )
+            updateTodoItem refTodoItem (setDescription description) model
 
         DeleteTodoItem refTodoItem ->
-            ( removeTodoItem refTodoItem model
-            , Cmd.none
-            )
+            removeTodoItem refTodoItem model
 
         CompleteTodoItem refTodoItem isComplete ->
-            ( updateTodoItem refTodoItem (completeTodoItem isComplete) model
-            , Cmd.none
-            )
+            updateTodoItem refTodoItem (completeTodoItem isComplete) model
 
         AddTodoItem ->
-            ( model ++ [ TodoItem "" Editing ]
-            , Cmd.none
-            )
+            model ++ [ TodoItem "" Editing ]
 
 
 editTodoItemView : TodoItem -> Html Msg
@@ -187,7 +170,7 @@ todoItemView todoItem =
                 Incomplete ->
                     incompleteTodoItemView todoItem
     in
-        div [ class "todo-list-item" ]
+        li [ class "todo-list-item" ]
             [ child ]
 
 
@@ -215,16 +198,10 @@ view model =
         ]
 
 
-subscriptions : Model -> Sub Msg
-subscriptions model =
-    Sub.none
-
-
 main : Program Never Model Msg
 main =
-    Html.program
-        { init = init
-        , update = update
+    Html.beginnerProgram
+        { model = initialModel
         , view = view
-        , subscriptions = subscriptions
+        , update = update
         }

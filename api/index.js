@@ -11,7 +11,14 @@ app.use(cors());
 app.get('/users/:login', (req, res) => {
   const { login } = req.params;
 
-  if (userCache[login]) {
+  if (login.toLowerCase() === 'nouser') {
+    setTimeout(() => {
+      res.status(404).send({
+        message: 'Not Found',
+        documentation_url: 'https://developer.github.com/v3',
+      });
+    }, 500);
+  } else if (userCache[login]) {
     setTimeout(() => {
       res.send(userCache[login]);
     }, 750);

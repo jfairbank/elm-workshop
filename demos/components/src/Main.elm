@@ -26,31 +26,26 @@ init =
     ( initialModel, Cmd.none )
 
 
-updateComponent : (cmodel -> Model) -> (cmsg -> Msg) -> ( cmodel, Cmd cmsg ) -> ( Model, Cmd Msg )
-updateComponent update msgCreator ( subModel, subCmd ) =
-    ( update subModel, Cmd.map msgCreator subCmd )
-
-
-updateTodo : Model -> Todo.Model -> Model
-updateTodo model todo =
-    { model | todo = todo }
-
-
-updateGitHub : Model -> GitHub.Model -> Model
-updateGitHub model github =
-    { model | github = github }
-
-
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
         TodoMsg todoMsg ->
-            updateComponent (updateTodo model) TodoMsg <|
-                Todo.update todoMsg model.todo
+            let
+                newTodo =
+                    Todo.update todoMsg model.todo
+            in
+                ( { model | todo = newTodo }
+                , Cmd.none
+                )
 
         GitHubMsg githubMsg ->
-            updateComponent (updateGitHub model) GitHubMsg <|
-                GitHub.update githubMsg model.github
+            let
+                ( newGitHub, githubCmd ) =
+                    GitHub.update githubMsg model.github
+            in
+                ( { model | github = newGitHub }
+                , Cmd.map GitHubMsg githubCmd
+                )
 
 
 view : Model -> Html Msg
