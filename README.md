@@ -16,7 +16,7 @@ For demos, please use these template URLs to follow along:
 | Content | URL |
 | ------- | --- |
 | Syntax | https://ellie-app.com/3XTqJhCd3b8a1/3 |
-| Elm Application | https://ellie-app.com/43TpzHgKVsHa1/0 |
+| Elm Application | https://ellie-app.com/qrxByBpnca1/0 |
 
 ## Completed Demos
 
@@ -29,7 +29,7 @@ reference while working on the exercises.
 | Lists and Records | https://ellie-app.com/43c4rR4y5vfa1/0 |
 | Static Types | https://ellie-app.com/43c57V42jx7a1/0 |
 | Union Types | https://ellie-app.com/43c69kPSZxZa1/0 |
-| Elm Application | https://ellie-app.com/43Tvtj9vYC5a1/1 |
+| Elm Application | https://ellie-app.com/qvv2KVvGwa1/0 |
 
 ## Exercises
 
