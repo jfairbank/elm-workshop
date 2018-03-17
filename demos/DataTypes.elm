@@ -29,6 +29,17 @@ doubleAndKeepGreaterThan threshold numbers =
         |> List.filter (\n -> n > threshold)
 
 
+concatOperator =
+    -- both operands are ALWAYS lists
+    numberList ++ [ 6 ]
+
+
+consOperator =
+    -- left operand is ALWAYS single item
+    -- right operand is ALWAYS list
+    0 :: numberList
+
+
 dog =
     { name = "Tucker", age = 11 }
 

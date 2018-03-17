@@ -6,7 +6,7 @@ import Html exposing (Html, text)
 type Breed
     = Sheltie
     | Poodle
-    | Collie
+    | GoldenRetriever
 
 
 type alias Dog =
@@ -35,8 +35,8 @@ breedToString breed =
         Poodle ->
             "poodle"
 
-        Collie ->
-            "collie"
+        GoldenRetriever ->
+            "golden retriever"
 
 
 type Maybe a
@@ -61,8 +61,8 @@ hasDog person =
         Nothing ->
             person.name ++ " does not have a dog"
 
-        Just dog ->
-            person.name ++ " has a " ++ breedToString dog.breed
+        Just personsDog ->
+            person.name ++ " has a " ++ breedToString personsDog.breed
 
 
 output =

@@ -19,7 +19,8 @@ For demos, please use these template URLs to follow along:
 
 | Content | URL |
 | ------- | --- |
-| Syntax | https://ellie-app.com/8hQzDZMRa1/0 |
+| General | https://ellie-app.com/8hQzDZMRa1/0 |
+| Static Types | https://ellie-app.com/4sc93c7xya1/0 |
 | GitHub Application (no HTTP) | https://ellie-app.com/bJK855jBa1/1 |
 | Gif Application (HTTP) | https://ellie-app.com/xfNh99HYa1/0 |
 | Text Engine Application | https://ellie-app.com/zVRYBH4ca1/0 |
@@ -32,14 +33,14 @@ reference while working on the exercises.
 | Content | URL |
 | ------- | --- |
 | Syntax and Functions | https://ellie-app.com/F9NypKpfa1/0 |
-| Lists and Records | https://ellie-app.com/H5nvMP2Ha1/0 |
+| Lists and Records | https://ellie-app.com/H5nvMP2Ha1/1 |
 | Static Types | https://ellie-app.com/J9LzG8CYa1/0 |
-| Union Types | https://ellie-app.com/KcwpjVkVa1/0 |
+| Union Types | https://ellie-app.com/KcwpjVkVa1/1 |
 | Text Engine Application (DRY) | https://ellie-app.com/MLqpvdV3a1/0 |
 | Text Engine Application (not DRY) | https://ellie-app.com/P4LFshZYa1/0 |
 | GitHub Application (no HTTP) | https://ellie-app.com/QqCwfHxca1/0 |
 | JSON Decoders | https://ellie-app.com/Syq6SkFCa1/0 |
-| Gifs Application (HTTP) | https://ellie-app.com/TPL2qc9ca1/0 |
+| Gifs Application (HTTP) | https://ellie-app.com/TPL2qc9ca1/1 |
 
 ## Exercises
 
@@ -53,7 +54,7 @@ instructions in the comments.
 | Static Types | https://ellie-app.com/q3Jjfywpja1/1 |
 | Union Types | https://ellie-app.com/3M7fNp6zmZCa1/0 |
 | Shopping Cart Application | https://ellie-app.com/qkkmJNsCza1/1 |
-| JSON Decoders | https://ellie-app.com/3M7C9Tsw4zNa1/0 |
+| JSON Decoders | https://ellie-app.com/3FK8F6mjTa1/0 |
 | GitHub Application (HTTP) | https://ellie-app.com/33x8dtjdSa1/0 |
 
 ## Completed Exercises
@@ -71,7 +72,7 @@ files until you've attempted the exercises yourself. To view the URLs, click
 | Static Types | https://ellie-app.com/qhXZC8ktFa1/0 |
 | Union Types | https://ellie-app.com/3M7gkY6RQCsa1/1 |
 | Shopping Cart Application | https://ellie-app.com/qmGT6sNBXa1/0 |
-| JSON Decoders | https://ellie-app.com/3M7D4cnPgnKa1/0 |
+| JSON Decoders | https://ellie-app.com/3HLcGxLS2a1/1 |
 | GitHub Application (HTTP) | https://ellie-app.com/36F9XybfXa1/0 |
 
 </details>
